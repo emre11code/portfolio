@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Emre Koca - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .hover-btn:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .bg-light-gray {
+            background-color: #f7f7f7;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+        }
+        .about-text {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li:before {
+            content: '→';
+            margin-right: 8px;
+            color: black;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #e0e0e0, #c0c0c0);
+            border-radius: 10px;
+            padding: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Osman Emre Koca</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Hakkımda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Yetenekler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projeler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light-gray">
+        <div class="container text-center">
+            <h2 class="section-title" data-toggle="collapse" data-target="#aboutContent">Hakkımda</h2>
+            <div id="aboutContent" class="collapse show about-container">
+                <img src="img/WhatsApp Görsel 2024-04-15 saat 16.21.49_4c1cbdd0.jpg" alt="Profil Fotoğrafı" class="profile-img mb-4">
+                <div class="about-text text-left">
+                    <p>Merhaba, ben Osman Emre Koca. 2021 yılında İngilizce Matematik ile başladığım üniversite eğitimime, hazırlık yılını tamamladıktan sonra Türkçe Matematik ile devam ediyorum. Şu anda ikinci sınıf öğrencisiyim.</p>
+                    <p>Web geliştirme konusunda büyük bir ilgim var ve HTML, CSS, JavaScript, .NET Core (C#) ve SQL konularında temel bilgiye sahibim. MAGEND'de WordPress siteleri yönetiyor ve Erasmus+ projelerine katılıyorum.</p>
+                    <p>Yaratıcı, çözüm odaklı ve güçlü iletişim becerilerine sahip biriyim. Kültürel farklılıklara uyum sağlama yeteneğim de bulunuyor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container text-center">
+            <h2 class="section-title" data-toggle="collapse" data-target="#skillsContent">Yetenekler</h2>
+            <div id="skillsContent" class="collapse skills-list">
+                <ul>
+                    <li>HTML & CSS - Deneyimli</li>
+                    <li>JavaScript - Orta</li>
+                    <li>.NET Core (C#) - Başlangıç</li>
+                    <li>SQL - Başlangıç</li>
+                    <li>Firebase - Başlangıç</li>
+                    <li>WordPress - Deneyimli</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light-gray">
+        <div class="container text-center">
+            <h2 class="section-title" data-toggle="collapse" data-target="#projectsContent">Projeler</h2>
+            <div id="projectsContent" class="collapse">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">BlogSite</h5>
+                                <p class="card-text">Blog yazılarını yazabileceğin sade ve şık website.</p>
+                                <a href="https://6674a21a813260d19a471233--incandescent-pixie-193617.netlify.app/" class="btn btn-primary hover-btn">Görüntüle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">To-Do List</h5>
+                                <p class="card-text">Yapılacaklar Listesi.</p>
+                                <a href="https://66757f14543aae88e9ed7451--warm-ganache-ff47a4.netlify.app/" class="btn btn-primary hover-btn">Görüntüle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Hava Durumu</h5>
+                                <p class="card-text">Konumun Hava durumunu gösteren harika bir site.</p>
+                                <a href="https://66757e353bf94c81fc4ac4fe--precious-crepe-bd9793.netlify.app/" class="btn btn-primary hover-btn">Görüntüle</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Wetflix</h5>
+                                <p class="card-text">Netflixin yan ürünü</p>
+                                <a href="https://6674a2c4a47af8cbdcd36df5--silver-daifuku-8f2fbb.netlify.app/" class="btn btn-primary hover-btn">Görüntüle</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container text-center">
+            <h2 class="section-title" data-toggle="collapse" data-target="#contactContent">İletişim</h2>
+            <div id="contactContent" class="collapse">
+                <div class="contact-box">
+                    <p>Bana ulaşmak için aşağıdaki bilgileri kullanabilirsiniz:</p>
+                    <p>Email: osmanemrekoca@gmail.com</p>
+                    <p>Telefon: +90 544 287 8828</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Bölüm başlıklarına tıklandığında diğer bölümleri kapat
+        document.querySelectorAll('.section-title').forEach(title => {
+            title.addEventListener('click', function() {
+                document.querySelectorAll('.collapse').forEach(section => {
+                    if (section !== this.nextElementSibling) {
+                        section.classList.remove('show');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
